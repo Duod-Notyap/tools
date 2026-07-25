@@ -2,33 +2,33 @@
  * GENERATED FILE: DO NOT EDIT !!!!!!!
  */
 
-#ifndef INCLUDE__PROJECT__CONFIG_H_IN_
-#define INCLUDE__PROJECT__CONFIG_H_IN_
+#ifndef INCLUDE__PROJECT__UP__CONFIG_H_IN_
+#define INCLUDE__PROJECT__UP__CONFIG_H_IN_
 
-#define _PROJECT__NAMESPACE ${SIPLUS_NAMESPACE}
-#define _PROJECT__VERSION ${PROJECT_VERSION}
-#define _PROJECT__VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
-#define _PROJECT__VERSION_MINOR ${PROJECT_VERSION_MINOR}
-#define _PROJECT__VERSION_PATCH ${PROJECT_VERSION_PATCH}
+#define _PROJECT__UP__NAMESPACE ${SIPLUS_NAMESPACE}
+#define _PROJECT__UP__VERSION ${PROJECT_VERSION}
+#define _PROJECT__UP__VERSION_MAJOR ${PROJECT_VERSION_MAJOR}
+#define _PROJECT__UP__VERSION_MINOR ${PROJECT_VERSION_MINOR}
+#define _PROJECT__UP__VERSION_PATCH ${PROJECT_VERSION_PATCH}
 
-#ifdef _PROJECT__EXPORTING
-#undef _PROJECT__EXPORTING
+#ifdef _PROJECT__UP__EXPORTING
+#undef _PROJECT__UP__EXPORTING
 #endif
-#cmakedefine _PROJECT__EXPORTING
+#cmakedefine _PROJECT__UP__EXPORTING
 
-#ifdef _PROJECT__BUILD
-#  if defined(_PROJECT__EXPORTING) && defined(_MSC_VER)
-#    define _PROJECT__EXPORT _declspec(dllexport)
+#ifdef _PROJECT__UP__BUILD
+#  if defined(_PROJECT__UP__EXPORTING) && defined(_MSC_VER)
+#    define _PROJECT__UP__EXPORT _declspec(dllexport)
 #  else
-#    define _PROJECT__EXPORT
+#    define _PROJECT__UP__EXPORT
 #  endif
 #else
-#  ifdef defined(_PROJECT__EXPORTING) && defined(_MSC_VER)
-#    define _PROJECT__EXPORT __declspec(dllimport)
+#  ifdef defined(_PROJECT__UP__EXPORTING) && defined(_MSC_VER)
+#    define _PROJECT__UP__EXPORT __declspec(dllimport)
 #  else
-#    define _PROJECT__EXPORT
+#    define _PROJECT__UP__EXPORT
 #  endif
 #endif
 
-#endif  // INCLUDE__PROJECT__CONFIG_H_IN_
+#endif  // INCLUDE__PROJECT__UP__CONFIG_H_IN_
 
