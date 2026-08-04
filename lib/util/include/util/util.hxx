@@ -22,4 +22,19 @@ void printPointerBits(T *ptr) {
     std::cout << std::endl;
 }
 
+template<typename T, typename OStream>
+void printBits(OStream& out, const T& data) {
+    for(int byte = 0; byte < sizeof(T); byte++) {
+        auto ptr = reinterpret_cast<const char*>(&data) + byte;
+
+        for (int i = 7; i >= 0; --i) {
+            out << ((*ptr >> i) & 1);
+        }
+
+        if(byte < sizeof(T) - 1) {
+            out << ' ';
+        }
+    }
+}
+
 #endif  // INCLUDE_TEST_UTIL_H_
